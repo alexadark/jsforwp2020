@@ -1,0 +1,68 @@
+import { themes } from "mdx-deck"
+import myTheme from "./theme.js"
+import { CodeSurfer, CodeSurferColumns, Step } from "code-surfer"
+import { github, vsDark, shadesOfPurple } from "@code-surfer/themes"
+import { Box, Flex } from "theme-ui"
+
+export const theme = myTheme
+
+<Header>
+
+# Header
+
+</Header>
+
+<Footer>
+
+[@alexadark](https://twitter.com/alexadark)
+[gatsbywpthemes.com](https://gatsbywpthemes.com/)
+[alexandraspalato.com](https://alexandraspalato.com/)
+
+</Footer>
+
+# Hello 👋
+
+---
+
+# slide 2
+
+<Box color="tomato" sx={{ bg: "white", p: 20 }}>
+  Hello
+</Box>
+
+<CodeSurfer>
+
+```js title="This is a title" subtitle="and this a subtitle"
+console.log(1)
+console.log(2)
+console.log(3)
+```
+
+```js 1
+console.log(1)
+console.log(2)
+console.log(3)
+```
+
+```js
+console.log(1)
+console.log(2)
+console.log(3)
+console.log(4)
+console.log(5)
+```
+
+</CodeSurfer>
+
+---
+
+# slide 3
+
+<Steps>
+
+- One
+- Two
+- Three
+- Four
+
+</Steps>

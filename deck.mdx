@@ -2,15 +2,10 @@ import { themes } from "mdx-deck"
 import myTheme from "./theme.js"
 import { CodeSurfer, CodeSurferColumns, Step } from "code-surfer"
 import { github, vsDark, shadesOfPurple } from "@code-surfer/themes"
-import { Box, Flex } from "theme-ui"
+import { Box, Flex, Grid } from "theme-ui"
+import { StartersVsThemes, Column } from "./components"
 
-export const theme = myTheme
-
-<Header>
-
-# Header
-
-</Header>
+export const theme = themes.yellow
 
 <Footer>
 
@@ -20,49 +15,81 @@ export const theme = myTheme
 
 </Footer>
 
-# Hello 👋
+# Building Gastby WordPress themes
+
+### 💁 [Alexandra Spalato](https://alexandraspalato.com/)
+
+### 🖥️ [Gatsby Wp Themes](https://gatsbywpthemes.com/)
 
 ---
 
-# slide 2
+# What are Gatsby themes ?
 
-<Box color="tomato" sx={{ bg: "white", p: 20 }}>
-  Hello
-</Box>
-
-<CodeSurfer>
-
-```js title="This is a title" subtitle="and this a subtitle"
-console.log(1)
-console.log(2)
-console.log(3)
-```
-
-```js 1
-console.log(1)
-console.log(2)
-console.log(3)
-```
-
-```js
-console.log(1)
-console.log(2)
-console.log(3)
-console.log(4)
-console.log(5)
-```
-
-</CodeSurfer>
-
----
-
-# slide 3
+Gatsby themes abstract a configuration into an installable package
+Technically they are gastby plugin including a gatsby-config.js file
 
 <Steps>
 
-- One
-- Two
-- Three
-- Four
+- shared functionality
+- data sourcing
+- design
 
 </Steps>
+<Notes>
+You can think of Gatsby themes as separate Gatsby sites that can be put together and allow you to split up a larger Gatsby project!
+</Notes>
+
+---
+
+# Gatsby themes vs Gatsby Starters
+
+    <StartersVsThemes/>
+
+---
+
+# Gatsby Starters
+
+Starters are a way to quickly create Gatsby sites with similar functionality.
+
+You download the entire prebuilt gatsby site and customize from there
+
+<Steps>
+
+- No connection to the starter, they diverge immediately, there is no way to update them if the starter updates
+- If you created multiple sites using the same starter, and want to make the same update on all of them, you'd have to do them individually
+
+</Steps>
+
+---
+
+# Gatsby themes vs WordPress Themes
+
+---
+
+# How we came to be
+
+<Steps>
+
+- Bringing some example projects showing how to connect WordPress and Gatsby
+- We Created some open source themes: TwentyTwenty and Tabor
+- creating professional themes that developers and agencies can use to save tons of development and design time.
+
+</Steps>
+
+---
+
+# Use Cases of gatsby WP Themes
+
+<Steps>
+
+- Non React developers
+- Non Designers
+- Others: Speeding up work by not reinventing the wheel
+
+</Steps>
+
+<Notes>bla bla</Notes>
+
+---
+
+# Features

@@ -15,16 +15,18 @@ export default {
     pre: "#fff",
     preBackground: "#051626",
     code: "#fff",
+    lighBlue: "#9EFFFF",
   },
 
   styles: {
     h1: { color: "#6AD798" },
     li: {
       maxWidth: 960,
-      py: 10,
+      py: 15,
       listStyle: "none",
       color: "#fff",
       textAlign: "left",
+      fontSize: 25,
     },
     a: {
       transition: "all .4s easeinout",

@@ -33,11 +33,12 @@ export let theme = myTheme
 # What are Gatsby themes ?
 
 Gatsby themes abstract a configuration into an installable package
-Technically they are gastby plugin including a gatsby-config.js file
+
+Technically they are gastby plugins including a gatsby-config.js file
 
 <Steps>
 
-- shared functionality
+- pre-configured shared functionality
 - data sourcing
 - design
 
@@ -50,16 +51,25 @@ You can think of Gatsby themes as separate Gatsby sites that can be put together
 
 # Gatsby themes vs Gatsby Starters
 
+They both provide boilerplate, functionality and style, to bootstrap your project
+
+<Steps>
+
+- initial design and styles
+- initial plugins functionality
+- initial pages generator and website sections logic
+
+</Steps>
+
 ---
 
 # Gatsby Starters
 
-Starters are a way to quickly create Gatsby sites with similar functionality.
-
-You download the entire prebuilt gatsby site and customize from there
+A starter is a boilerplate Gatsby site that users can copy and customize. Once modified, a starter maintains no connection to its source.
 
 <Steps>
 
+- your default configuration lives directly in your site
 - No connection to the starter, they diverge immediately, there is no way to update them if the starter updates
 - If you created multiple sites using the same starter, and want to make the same update on all of them, you'd have to do them individually
 
@@ -67,15 +77,94 @@ You download the entire prebuilt gatsby site and customize from there
 
 ---
 
-# Gatsby themes vs WordPress Themes
+# Gatsby themes
+
+Gatsby themes allow Gatsby site functionality to be packaged as a standalone product for others (and yourself!) to easily reuse
 
 <Steps>
-  <h2 sx={{color: 'red'}}>📝 Write presentations in markdown</h2>
-  <h2>⚛️ Import and use React components</h2>
-  <h2>💅 Customizable themes and components</h2>
-  <h2>0️⃣ Zero-config CLI</h2>
+
+- all of your default configuration lives in an npm package.
+- themes are versioned packages that can be updated like any other package.
+- If you created multiple sites using the same theme, you can just update the central theme to push changes across all of them
+- Themes are composable: You could install a blog theme alongside a notes theme, alongside an e-commerce theme (and so forth)
 
 </Steps>
+
+---
+
+# Gatsby themes vs WordPress Themes
+
+<Split>
+
+ <Box>
+
+#### Gatsby Themes
+
+<ul>
+  <li>updtatable: yes</li>
+  <li>User Options: yes</li>
+  <li>Composable: yes, horizontally and vertically</li>
+  <li>could provide functionality only: yes</li>
+  <li>customization: trough shadowing</li>
+
+</ul>
+
+ </Box>
+
+  <Box>
+
+#### WordPress Themes
+
+<ul>
+  <li>updtatable: yes</li>
+  <li>User Options: yes</li>
+  <li>Composable: no</li>
+  <li>could provide functionality only: no</li>
+  <li>customization: trough child themes</li>
+</ul>
+
+  </Box>
+
+</Split>
+
+<Notes>
+  child themes are 2 different things in gatsby and WordPress in wordpress A
+  child theme in WordPress is a sub theme that inherits all the functionality,
+  features, and style of its parent theme. Child themes are a safe way to modify a WordPress theme
+  Gatsby themes can compose horizontally and vertically. Vertical composition refers to the classic “parent/child” relationship. A child theme declares a parent theme in the child theme’s plugins array.
+
+</Notes>
+
+---
+
+# Gatsby WordPress Themes
+
+Gatsby Themes which use WordPress as a source
+
+<Steps>
+
+- WordPress Plugins: [WPGraphQl](https://www.wpgraphql.com/), [WPGatsby](https://github.com/gatsbyjs/wp-gatsby)
+- Gatsby Plugins: [gatsby-wordpress-source](https://www.gatsbyjs.org/packages/gatsby-source-wordpress-experimental/)
+
+</Steps>
+<Notes>
+  Content Mesh
+
+</Notes>
+
+---
+
+# Use Cases of gatsby WP Themes
+
+<Steps>
+
+- Non React developers
+- Non Designers
+- Others: Speeding up work by not reinventing the wheel, sharing pieces of configuration accross multiple projects
+
+</Steps>
+
+<Notes>bla bla</Notes>
 
 ---
 
@@ -88,20 +177,6 @@ You download the entire prebuilt gatsby site and customize from there
 - creating professional themes that developers and agencies can use to save tons of development and design time.
 
 </Steps>
-
----
-
-# Use Cases of gatsby WP Themes
-
-<Steps>
-
-- Non React developers
-- Non Designers
-- Others: Speeding up work by not reinventing the wheel
-
-</Steps>
-
-<Notes>bla bla</Notes>
 
 ---
 

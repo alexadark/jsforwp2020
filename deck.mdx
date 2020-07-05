@@ -1,11 +1,11 @@
-import { themes } from "mdx-deck"
+import { themes, Split } from "mdx-deck"
 import myTheme from "./theme.js"
 import { CodeSurfer, CodeSurferColumns, Step } from "code-surfer"
 import { github, vsDark, shadesOfPurple } from "@code-surfer/themes"
 import { Box, Flex, Grid } from "theme-ui"
-import { StartersVsThemes, Column } from "./components"
+import Highlighter from "react-syntax-highlighter"
 
-export const theme = themes.yellow
+export let theme = myTheme
 
 <Footer>
 
@@ -14,6 +14,13 @@ export const theme = themes.yellow
 [alexandraspalato.com](https://alexandraspalato.com/)
 
 </Footer>
+
+<Head>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Coda&family=Coda+Caption:wght@800&display=swap"
+    rel="stylesheet"
+  />
+</Head>
 
 # Building Gastby WordPress themes
 
@@ -43,8 +50,6 @@ You can think of Gatsby themes as separate Gatsby sites that can be put together
 
 # Gatsby themes vs Gatsby Starters
 
-    <StartersVsThemes/>
-
 ---
 
 # Gatsby Starters
@@ -63,6 +68,14 @@ You download the entire prebuilt gatsby site and customize from there
 ---
 
 # Gatsby themes vs WordPress Themes
+
+<Steps>
+  <h2 sx={{color: 'red'}}>📝 Write presentations in markdown</h2>
+  <h2>⚛️ Import and use React components</h2>
+  <h2>💅 Customizable themes and components</h2>
+  <h2>0️⃣ Zero-config CLI</h2>
+
+</Steps>
 
 ---
 

@@ -19,10 +19,18 @@ export default {
   },
 
   styles: {
-    h1: { color: "#6AD798" },
+    h1: {
+      color: "#6AD798",
+    },
+    h2: {
+      color: "#6AD798",
+    },
+    h3: {
+      color: "#6AD798",
+    },
     li: {
       maxWidth: 960,
-      py: 15,
+      py: 12,
       listStyle: "none",
       color: "#fff",
       textAlign: "left",
@@ -31,6 +39,7 @@ export default {
     a: {
       transition: "all .4s easeinout",
       color: "#9EFFFF",
+      textAlign: "left",
       "&:hover": {
         color: "#FCBBCC",
       },

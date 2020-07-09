@@ -4,6 +4,7 @@ import { CodeSurfer, CodeSurferColumns, Step } from "code-surfer"
 import { github, vsDark, shadesOfPurple } from "@code-surfer/themes"
 import { Box, Flex, Grid } from "theme-ui"
 import Highlighter from "react-syntax-highlighter"
+import { lighten } from "polished"
 import { TeamMember } from "./components"
 import Alex from "./images/alex.jpg"
 import Zac from "./images/zac.jpg"
@@ -90,7 +91,7 @@ Gatsby themes allow Gatsby site functionality to be packaged as a standalone pro
 
 # Gatsby themes vs WordPress Themes
 
-<Split>
+<Grid columns={2} gap={50} sx={{'div':{ p:10, bg:'#39376d'}}}>
 
  <Box>
 
@@ -121,7 +122,7 @@ Gatsby themes allow Gatsby site functionality to be packaged as a standalone pro
 
   </Box>
 
-</Split>
+</Grid>
 
 <Notes>
   child themes are 2 different things in gatsby and WordPress in wordpress A

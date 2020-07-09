@@ -1,5 +1,6 @@
 import { github, vsDark, shadesOfPurple } from "@code-surfer/themes"
 import { themes } from "mdx-deck"
+import check from "./images/check.svg"
 
 export default {
   ...themes.condensed,
@@ -35,6 +36,17 @@ export default {
       color: "#fff",
       textAlign: "left",
       fontSize: 25,
+      position: "relative",
+      pl: 35,
+      "&:before": {
+        content: "''",
+        backgroundImage: `url(${check})`,
+        width: 24,
+        height: 24,
+        position: "absolute",
+        left: 0,
+        top: 20,
+      },
     },
     a: {
       transition: "all .4s easeinout",

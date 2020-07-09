@@ -49,11 +49,11 @@ export default {
       },
     },
     a: {
-      transition: "all .4s easeinout",
-      color: "#9EFFFF",
+      transition: "all .4s ease-in-out",
+      color: "text",
       textAlign: "left",
       "&:hover": {
-        color: "#FCBBCC",
+        color: "#6AD798",
       },
     },
     Footer: {

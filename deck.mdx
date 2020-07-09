@@ -4,6 +4,10 @@ import { CodeSurfer, CodeSurferColumns, Step } from "code-surfer"
 import { github, vsDark, shadesOfPurple } from "@code-surfer/themes"
 import { Box, Flex, Grid } from "theme-ui"
 import Highlighter from "react-syntax-highlighter"
+import { TeamMember } from "./components"
+import Alex from "./images/alex.jpg"
+import Zac from "./images/zac.jpg"
+import Paulina from "./images/paulina.jpg"
 
 export let theme = myTheme
 
@@ -97,7 +101,7 @@ Gatsby themes allow Gatsby site functionality to be packaged as a standalone pro
   <li>User Options: yes</li>
   <li>Composable: yes, horizontally and vertically</li>
   <li>could provide functionality only: yes</li>
-  <li>customization: trough shadowing wish allows users to overrid a component in order to customize its rendering</li>
+  <li>customization: trough shadowing wish allows users to override a component in order to customize its rendering</li>
 
 </ul>
 
@@ -172,6 +176,16 @@ Gatsby Themes which use WordPress as a source
 ---
 
 # The Team
+
+<Grid columns={3} gap={100}>
+  <TeamMember
+    src={Alex}
+    name="Alexandra Spalato"
+    url="https://alexandraspalato.com/"
+  />
+  <TeamMember src={Zac} name="Zac Gordon" url="https://www.zacgordon.com/" />
+  <TeamMember src={Paulina} name="Paulina Hetman" url="https://pehaa.com/" />
+</Grid>
 
 ---
 
